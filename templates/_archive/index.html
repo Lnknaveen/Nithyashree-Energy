@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nithyashree — Website Concepts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f2ee;--ink:#141414;--mu:#6d6a64;--ln:#dedad2;--card:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e0e0d;--ink:#f2efe9;--mu:#9a968e;--ln:#26251f;--card:#171614}}
+:root[data-theme=dark]{--bg:#0e0e0d;--ink:#f2efe9;--mu:#9a968e;--ln:#26251f;--card:#171614}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:"Inter Tight",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+header{padding:56px 0 40px;border-bottom:1px solid var(--ln)}
+.top{display:flex;justify-content:space-between;gap:20px;font-size:13px;color:var(--mu);letter-spacing:.06em;text-transform:uppercase;flex-wrap:wrap}
+h1{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(52px,8vw,120px);line-height:.95;letter-spacing:-.02em;margin-top:40px}
+h1 em{color:#e0782f}
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:32px;color:var(--mu);font-size:17px;line-height:1.6}
+@media(max-width:800px){.intro{grid-template-columns:1fr}}
+.list{padding:40px 0 100px;display:grid;gap:20px}
+.item{display:grid;grid-template-columns:1.25fr 1fr;border:1px solid var(--ln);border-radius:24px;overflow:hidden;background:var(--card);transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s}
+.item:hover{transform:translateY(-4px);box-shadow:0 30px 60px -30px rgba(0,0,0,.35)}
+.prev{position:relative;aspect-ratio:16/10;overflow:hidden;background:#000}
+.prev iframe{position:absolute;top:0;left:0;width:1440px;height:900px;border:0;transform-origin:0 0;pointer-events:none}
+.meta{padding:36px;display:flex;flex-direction:column;gap:18px}
+.num{font-family:"Instrument Serif",serif;font-style:italic;font-size:22px;color:var(--mu)}
+.meta h2{font-family:"Instrument Serif",serif;font-weight:400;font-size:56px;line-height:1}
+.meta p{color:var(--mu);line-height:1.6}
+.sw{display:flex;gap:6px}
+.sw i{width:28px;height:28px;border-radius:50%;border:1px solid var(--ln)}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags span{font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid var(--ln);color:var(--mu)}
+.open{margin-top:auto;display:inline-flex;align-items:center;gap:10px;font-weight:600;padding:14px 22px;border-radius:999px;background:var(--ink);color:var(--bg);width:max-content}
+@media(max-width:900px){.item{grid-template-columns:1fr}.meta h2{font-size:42px}}
+footer{border-top:1px solid var(--ln);padding:30px 0;color:var(--mu);font-size:13px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="top"><span>Nithyashree Enterprises</span><span>Website concepts · 2026</span><span>Solar manufacturing &amp; EPC</span></div>
+  <h1>Five directions for a<br><em>world-class</em> solar brand.</h1>
+  <div class="intro">
+    <p>Each concept is a fully working, responsive HTML5 prototype. It is built on what the world's leading solar manufacturers (LONGi, Jinko, Trina) and the best 2026 web design do well, and tuned for Indian buyers: PM Surya Ghar subsidy, DCR / ALMM List-II compliance, net metering and WhatsApp-first contact.</p>
+    <p>Click any concept to open it full screen. All content, figures, testimonials and contact details are placeholders to be replaced with Nithyashree's real data, photography and branding once a direction is chosen.</p>
+  </div>
+</div></header>
+
+<main class="wrap list">
+  <a class="item" href="01-lumen.html">
+    <div class="prev"><iframe src="01-lumen.html" loading="lazy" title="Lumen preview" tabindex="-1"></iframe></div>
+    <div class="meta"><span class="num">01</span><h2>Lumen</h2><p>Luxury dark. A warm sun glow, editorial serif type and a bento grid. Tells the "silicon to sunlight" story with a sticky scroll, and includes a live PM Surya Ghar savings calculator.</p>
+      <div class="sw"><i style="background:#0b0a09"></i><i style="background:#ffb547"></i><i style="background:#ff7a3d"></i><i style="background:#e84a5f"></i></div>
+      <div class="tags"><span>Premium residential</span><span>Savings calculator</span><span>Sticky storytelling</span><span>3D module</span></div><span class="open">Open concept →</span></div>
+  </a>
+  <a class="item" href="02-meridian.html">
+    <div class="prev"><iframe src="02-meridian.html" loading="lazy" title="Meridian preview" tabindex="-1"></iframe></div>
+    <div class="meta"><span class="num">02</span><h2>Meridian</h2><p>Global manufacturer. A corporate look in the style of LONGi and Jinko, with mega-menus, a hero slider, efficiency records, an interactive exploded module, filterable datasheets, an animated world map and a dealer enquiry form. Light and dark themes.</p>
+      <div class="sw"><i style="background:#fff"></i><i style="background:#06102a"></i><i style="background:#0b3bff"></i><i style="background:#ff8a00"></i></div>
+      <div class="tags"><span>Manufacturing-first</span><span>B2B &amp; export</span><span>Product catalogue</span><span>Dark mode</span></div><span class="open">Open concept →</span></div>
+  </a>
+  <a class="item" href="03-terra.html">
+    <div class="prev"><iframe src="03-terra.html" loading="lazy" title="Terra preview" tabindex="-1"></iframe></div>
+    <div class="meta"><span class="num">03</span><h2>Terra</h2><p>Editorial eco. Warm paper textures and soft serif type, with a founder's letter, a horizontal-scroll installation journey, hover-reveal services, a subsidy explainer and an FAQ. Human, trustworthy and local.</p>
+      <div class="sw"><i style="background:#f3ede2"></i><i style="background:#1f3d2b"></i><i style="background:#e8a33d"></i><i style="background:#c8643b"></i></div>
+      <div class="tags"><span>Family brand</span><span>Storytelling</span><span>Horizontal scroll</span><span>Subsidy guide</span></div><span class="open">Open concept →</span></div>
+  </a>
+  <a class="item" href="04-volt.html">
+    <div class="prev"><iframe src="04-volt.html" loading="lazy" title="Volt preview" tabindex="-1"></iframe></div>
+    <div class="meta"><span class="num">04</span><h2>Volt</h2><p>Industrial brutalist. Giant condensed type, a visible grid and a crosshair cursor. Built for factory owners and CFOs, with a C&amp;I ROI engine (CAPEX / RESCO / open access), a live fleet generation ticker and a project table.</p>
+      <div class="sw"><i style="background:#0a0a0a"></i><i style="background:#e6ff2b"></i><i style="background:#f2f2ec"></i><i style="background:#2a2a2a"></i></div>
+      <div class="tags"><span>Commercial &amp; industrial</span><span>ROI engine</span><span>Bold positioning</span><span>Variable type</span></div><span class="open">Open concept →</span></div>
+  </a>
+  <a class="item" href="05-solstice.html">
+    <div class="prev"><iframe src="05-solstice.html" loading="lazy" title="Solstice preview" tabindex="-1"></iframe></div>
+    <div class="meta"><span class="num">05</span><h2>Solstice</h2><p>An immersive day. The sky moves from dawn to midnight as you scroll, and the sun turns into the moon. Shows how solar and battery power a home around the clock, with an app mock-up, package pricing and a 60-second quote wizard.</p>
+      <div class="sw"><i style="background:#2b3a67"></i><i style="background:#f6a37d"></i><i style="background:#2f86de"></i><i style="background:#ffcf4a"></i></div>
+      <div class="tags"><span>Residential + storage</span><span>Scroll experience</span><span>Quote wizard</span><span>Glass UI</span></div><span class="open">Open concept →</span></div>
+  </a>
+</main>
+<footer><div class="wrap">Prepared for Nithyashree Enterprises · Concepts are prototypes; final build will use real photography, data and brand assets.</div></footer>
+<script>
+const fit=()=>document.querySelectorAll('.prev').forEach(p=>{const f=p.querySelector('iframe');f.style.transform=`scale(${p.clientWidth/1440})`});
+addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
