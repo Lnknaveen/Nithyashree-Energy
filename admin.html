@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Lead desk · Nithyashree</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#fff;--soft:rgba(255,255,255,.72);--dim:rgba(255,255,255,.45);--line:rgba(255,255,255,.14);--glass:rgba(12,18,40,.52);--acc:#ffcf4a;--grad:linear-gradient(90deg,#ffe29a,#ffb37a,#ff8ab3);--disp:"Bricolage Grotesque",system-ui,sans-serif;--sans:"Inter",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{color-scheme:dark}
+body{min-height:100vh;font-family:var(--sans);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased;background:radial-gradient(1100px 650px at 88% -12%,rgba(255,179,122,.3),transparent 62%),radial-gradient(900px 550px at -9% 12%,rgba(63,102,184,.45),transparent 60%),linear-gradient(180deg,#0a1028,#141c38 55%,#1a2340)}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+[hidden]{display:none!important}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--disp);font-size:22px;font-weight:600;letter-spacing:-.035em}
+.dot{width:22px;height:22px;border-radius:50%;background:var(--grad);box-shadow:0 0 24px rgba(255,190,100,.5)}
+.brand span{font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--dim);margin-left:4px}
+.right{display:flex;align-items:center;gap:18px;font-size:13px;color:var(--soft)}
+.who{font-family:var(--mono);font-size:11px;color:var(--dim);max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.site{color:var(--soft);white-space:nowrap}
+.site:hover{color:#fff}
+main{padding:38px 0 80px}
+.glass{background:var(--glass);border:1px solid var(--line);border-radius:26px;backdrop-filter:blur(22px) saturate(160%);-webkit-backdrop-filter:blur(22px) saturate(160%)}
+.gate{max-width:580px;margin:9vh auto;padding:42px}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.07);font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--soft)}
+.gate h1{font-family:var(--disp);font-size:clamp(40px,7vw,64px);line-height:.98;letter-spacing:-.045em;margin:20px 0 18px}
+.gate h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.gate p{color:var(--soft);max-width:46ch}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;height:50px;padding:0 22px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.07);color:#fff;font-size:14px;font-weight:600;cursor:pointer;transition:.2s}
+.btn:hover{background:rgba(255,255,255,.13);transform:translateY(-1px)}
+.btn:disabled{opacity:.45;cursor:default;transform:none}
+.btn-white{background:#fff;color:#101a33;border-color:#fff}
+.btn-white:hover{background:#f0f2f7}
+.g{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#fff;color:#4285f4;font-family:var(--disp);font-weight:700;font-size:15px}
+.note{margin-top:18px;font-size:12px;color:var(--dim);line-height:1.6;max-width:48ch}
+.err{color:#ffb4b4;font-size:13px;margin-top:14px}
+.dash-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin:38px 0 24px;flex-wrap:wrap}
+.dash-head h1{font-family:var(--disp);font-size:clamp(42px,6vw,64px);line-height:1;letter-spacing:-.045em;margin-top:14px}
+.dash-head p{color:var(--soft);font-size:14px;margin-top:10px}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}
+.stat{padding:20px 22px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid var(--line)}
+.stat b{display:block;font-family:var(--disp);font-size:34px;line-height:1;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.stat span{display:block;font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);margin-top:8px}
+.filters{display:flex;gap:10px;margin:20px 0 14px;flex-wrap:wrap}
+.filters input,.filters select{height:46px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:#fff;font-size:14px;padding:0 14px;outline:none;min-width:0}
+.filters input{flex:1 1 280px}
+.filters select{flex:0 0 190px}
+.filters input:focus,.filters select:focus{border-color:var(--acc)}
+.filters select option{color:#111}
+.leads{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;margin-top:14px}
+.lead{padding:22px;border-radius:22px;background:rgba(12,18,40,.55);border:1px solid var(--line);display:flex;flex-direction:column;gap:14px;min-width:0}
+.lead-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.src{font-family:var(--mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px;border-radius:999px;background:rgba(255,207,74,.14);color:#ffe6a3;border:1px solid rgba(255,207,74,.22);white-space:nowrap}
+.time{font-family:var(--mono);font-size:10px;color:var(--dim);text-align:right;white-space:nowrap;line-height:1.55}
+.lead h2{font-family:var(--disp);font-size:26px;line-height:1.05;letter-spacing:-.03em;word-break:break-word}
+.meta{display:flex;flex-wrap:wrap;gap:8px 14px;color:var(--soft);font-size:13px}
+.meta a{text-decoration:underline;text-decoration-color:rgba(255,255,255,.25);text-underline-offset:3px;overflow-wrap:anywhere}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 14px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0}
+.facts div{min-width:0}
+.facts small{display:block;font-family:var(--mono);font-size:8px;letter-spacing:.09em;text-transform:uppercase;color:var(--dim);margin-bottom:2px}
+.facts span{font-size:13px;overflow-wrap:anywhere;color:rgba(255,255,255,.85)}
+.msg{font-size:14px;color:var(--soft);line-height:1.55;overflow-wrap:anywhere;white-space:pre-wrap}
+.empty{padding:60px 28px;text-align:center;color:var(--soft);margin-top:14px}
+.empty b{display:block;font-family:var(--disp);font-size:28px;color:#fff;margin-bottom:6px}
+@media(max-width:900px){.stats{grid-template-columns:1fr 1fr}.gate{padding:30px;margin-top:5vh}}
+@media(max-width:600px){.top{padding:16px 0}.right .site{display:none}.who{max-width:170px}.brand{font-size:19px}.brand span{display:none}.dash-head{margin-top:28px}.leads{grid-template-columns:1fr}.filters select{flex:1 1 100%}.gate{padding:24px}.gate h1{font-size:42px}.actions{width:100%}.actions .btn{flex:1}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <a class="brand" href="/"><span class="dot"></span>Nithyashree <span>Lead desk</span></a>
+  <div class="right"><span class="who" id="userEmail"></span><a class="site" href="/">View site ↗</a></div>
+</header>
+
+<main class="wrap">
+  <section class="gate glass" id="signin">
+    <span class="pill">Admin access</span>
+    <h1>Every enquiry.<br><em>One quiet desk.</em></h1>
+    <p>Sign in with an authorised Google account to read the enquiries submitted through the Nithyashree website.</p>
+    <div class="btns">
+      <button class="btn btn-white" id="googleBtn" type="button"><span class="g">G</span>Continue with Google</button>
+      <a class="btn" href="/">Back to site</a>
+    </div>
+    <p class="err" id="signinErr" hidden></p>
+    <p class="note">Access is limited to the two admin Google accounts and enforced by Firestore security rules.</p>
+  </section>
+
+  <section class="gate glass" id="denied" hidden>
+    <span class="pill">Restricted</span>
+    <h1>This account<br><em>isn’t on the list.</em></h1>
+    <p id="deniedMsg">This Google account is not authorised to read the lead desk.</p>
+    <div class="btns">
+      <button class="btn btn-white" id="switchBtn" type="button">Use another account</button>
+      <button class="btn" id="signOutDenied" type="button">Sign out</button>
+    </div>
+  </section>
+
+  <section id="dash" hidden>
+    <div class="dash-head">
+      <div><span class="pill">Lead desk</span><h1>Enquiries.</h1><p id="dashSub">Live from Firestore</p></div>
+      <div class="actions"><button class="btn" id="exportBtn" type="button">Export CSV ↓</button><button class="btn" id="signOutBtn" type="button">Sign out</button></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b id="totalCount">0</b><span>Total leads</span></div>
+      <div class="stat"><b id="todayCount">0</b><span>Today</span></div>
+      <div class="stat"><b id="weekCount">0</b><span>Last 7 days</span></div>
+      <div class="stat"><b id="latestDate">—</b><span>Latest enquiry</span></div>
+    </div>
+    <div class="filters">
+      <input id="search" type="search" placeholder="Search name, phone, email, city…" aria-label="Search leads" autocomplete="off">
+      <select id="sourceFilter" aria-label="Filter by source">
+        <option value="">All sources</option>
+        <option value="survey">Site survey</option>
+        <option value="biz">Business proposal</option>
+        <option value="dealer">Dealer &amp; export</option>
+        <option value="quote">Quote wizard</option>
+      </select>
+    </div>
+    <div class="leads" id="leads"></div>
+    <div class="empty glass" id="empty" hidden><b>No leads here yet.</b>New enquiries will appear automatically.</div>
+  </section>
+</main>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithRedirect, getRedirectResult, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
+import { getFirestore, collection, query, orderBy, limit, onSnapshot } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyB0pwoViYXzp-lINGHOzVutWl9-B08TvRc",
+  authDomain: "nithyashree-energy.firebaseapp.com",
+  projectId: "nithyashree-energy",
+  storageBucket: "nithyashree-energy.firebasestorage.app",
+  messagingSenderId: "852339980638",
+  appId: "1:852339980638:web:df51bcf8c780a8947af7cf"
+};
+
+const ADMIN_EMAILS = ["nithyashree.energysolutions@gmail.com", "naveenkumar.lokesh@gmail.com"];
+const SOURCES = { survey: "Site survey", biz: "Business proposal", dealer: "Dealer & export", quote: "Quote wizard" };
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+const provider = new GoogleAuthProvider();
+provider.setCustomParameters({ prompt: "select_account" });
+
+const $ = id => document.getElementById(id);
+let allLeads = [];
+let unsubLeads = null;
+
+function showView(id) {
+  ["signin", "denied", "dash"].forEach(view => $(view).hidden = view !== id);
+}
+
+function showError(message) {
+  $("signinErr").textContent = message;
+  $("signinErr").hidden = false;
+}
+
+function friendlyAuthError(err) {
+  if (err?.code === "auth/unauthorized-domain") return "This domain is not authorised for Google sign-in in Firebase.";
+  if (err?.code === "auth/operation-not-allowed") return "Google sign-in is not enabled for this Firebase project.";
+  if (err?.code === "auth/popup-blocked") return "The sign-in popup was blocked. Please allow popups and try again.";
+  return err?.message || "Sign-in failed. Please try again.";
+}
+
+function isAdmin(user) {
+  return Boolean(user && user.emailVerified && ADMIN_EMAILS.includes((user.email || "").toLowerCase()));
+}
+
+async function signIn() {
+  $("signinErr").hidden = true;
+  try {
+    await signInWithPopup(auth, provider);
+  } catch (err) {
+    if (err?.code === "auth/popup-closed-by-user" || err?.code === "auth/cancelled-popup-request") return;
+    if (err?.code === "auth/popup-blocked" || err?.code === "auth/operation-not-supported-in-this-environment") {
+      await signInWithRedirect(auth, provider);
+      return;
+    }
+    showError(friendlyAuthError(err));
+  }
+}
+
+function toDate(value) {
+  if (!value) return null;
+  if (typeof value.toDate === "function") return value.toDate();
+  const date = new Date(value);
+  return Number.isNaN(date.getTime()) ? null : date;
+}
+
+function formatDate(date) {
+  return new Intl.DateTimeFormat("en-IN", { day: "2-digit", month: "short", year: "numeric" }).format(date);
+}
+
+function formatTime(date) {
+  return new Intl.DateTimeFormat("en-IN", { hour: "2-digit", minute: "2-digit" }).format(date);
+}
+
+function filteredLeads() {
+  const term = $("search").value.trim().toLowerCase();
+  const source = $("sourceFilter").value;
+  return allLeads.filter(lead => {
+    if (source && lead.source !== source) return false;
+    if (!term) return true;
+    return [lead.name, lead.phone, lead.email, lead.city, lead.company, lead.message, lead.interest, lead.model]
+      .filter(Boolean).join(" ").toLowerCase().includes(term);
+  });
+}
+
+function addFact(container, label, value) {
+  if (value === undefined || value === null || String(value).trim() === "") return;
+  const item = document.createElement("div");
+  const key = document.createElement("small");
+  const text = document.createElement("span");
+  key.textContent = label;
+  text.textContent = String(value);
+  item.append(key, text);
+  container.append(item);
+}
+
+function buildCard(lead) {
+  const card = document.createElement("article");
+  card.className = "lead";
+
+  const top = document.createElement("div");
+  top.className = "lead-top";
+  const source = document.createElement("span");
+  source.className = "src";
+  source.textContent = SOURCES[lead.source] || lead.source || "Enquiry";
+  const time = document.createElement("div");
+  time.className = "time";
+  const created = toDate(lead.createdAt);
+  time.textContent = created ? `${formatDate(created)} · ${formatTime(created)}` : "Just now";
+  top.append(source, time);
+
+  const name = document.createElement("h2");
+  name.textContent = lead.name || "Unnamed enquiry";
+
+  const meta = document.createElement("div");
+  meta.className = "meta";
+  if (lead.phone) {
+    const phone = document.createElement("a");
+    phone.href = `tel:${String(lead.phone).replace(/[^\d+]/g, "")}`;
+    phone.textContent = lead.phone;
+    meta.append(phone);
+  }
+  if (lead.email) {
+    const email = document.createElement("a");
+    email.href = `mailto:${lead.email}`;
+    email.textContent = lead.email;
+    meta.append(email);
+  }
+  if (lead.city) {
+    const city = document.createElement("span");
+    city.textContent = lead.city;
+    meta.append(city);
+  }
+
+  card.append(top, name);
+  if (meta.childElementCount) card.append(meta);
+
+  const facts = document.createElement("div");
+  facts.className = "facts";
+  [
+    ["Company", lead.company],
+    ["Property", lead.propertyType],
+    ["Backup", lead.backup],
+    ["System", lead.recommended || lead.systemType],
+    ["Bill", lead.bill || lead.billRange],
+    ["Model", lead.model],
+    ["Interest", lead.interest],
+    ["Subsidy", lead.subsidy],
+    ["Monthly saving", lead.monthlySaving]
+  ].forEach(([label, value]) => addFact(facts, label, value));
+  if (facts.childElementCount) card.append(facts);
+
+  if (lead.message) {
+    const message = document.createElement("p");
+    message.className = "msg";
+    message.textContent = lead.message;
+    card.append(message);
+  }
+
+  return card;
+}
+
+function render() {
+  const leads = filteredLeads();
+  $("leads").replaceChildren(...leads.map(buildCard));
+  $("empty").hidden = leads.length > 0;
+  $("exportBtn").disabled = leads.length === 0;
+  $("dashSub").textContent = `${allLeads.length} lead${allLeads.length === 1 ? "" : "s"} · live from Firestore`;
+
+  const dates = allLeads.map(lead => toDate(lead.createdAt)).filter(Boolean);
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const week = new Date(today);
+  week.setDate(week.getDate() - 7);
+  const latest = dates.slice().sort((a, b) => b - a)[0];
+  $("totalCount").textContent = allLeads.length;
+  $("todayCount").textContent = dates.filter(date => date >= today).length;
+  $("weekCount").textContent = dates.filter(date => date >= week).length;
+  $("latestDate").textContent = latest ? new Intl.DateTimeFormat("en-IN", { day: "2-digit", month: "short" }).format(latest) : "—";
+}
+
+function subscribe() {
+  if (unsubLeads) unsubLeads();
+  const leadsQuery = query(collection(db, "leads"), orderBy("createdAt", "desc"), limit(500));
+  unsubLeads = onSnapshot(leadsQuery, snapshot => {
+    allLeads = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+    render();
+  }, err => {
+    console.error("Could not read leads", err);
+    $("dashSub").textContent = err?.code === "permission-denied"
+      ? "Firestore denied this account. Check the admin rules."
+      : "Could not load leads from Firestore.";
+  });
+}
+
+function csvCell(value) {
+  let text = value === undefined || value === null ? "" : String(value);
+  if (/^[=+\-@]/.test(text)) text = "'" + text;
+  return `"${text.replace(/"/g, '""')}"`;
+}
+
+function exportCsv() {
+  const leads = filteredLeads();
+  const rows = [["Created at", "Source", "Name", "Phone", "Email", "City", "Company", "Property type", "Backup", "System", "Bill", "Bill band", "Model", "Interest", "Subsidy", "Monthly saving", "Message"]];
+  leads.forEach(lead => {
+    const created = toDate(lead.createdAt);
+    rows.push([
+      created ? created.toISOString() : "",
+      SOURCES[lead.source] || lead.source || "",
+      lead.name || "", lead.phone || "", lead.email || "", lead.city || "", lead.company || "",
+      lead.propertyType || "", lead.backup || "", lead.recommended || lead.systemType || "",
+      lead.bill || "", lead.billRange || "", lead.model || "", lead.interest || "",
+      lead.subsidy || "", lead.monthlySaving || "", lead.message || ""
+    ]);
+  });
+  const blob = new Blob(["\ufeff" + rows.map(row => row.map(csvCell).join(",")).join("\r\n")], { type: "text/csv;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = `nithyashree-leads-${new Date().toISOString().slice(0, 10)}.csv`;
+  link.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+async function doSignOut() {
+  if (unsubLeads) {
+    unsubLeads();
+    unsubLeads = null;
+  }
+  allLeads = [];
+  await signOut(auth);
+  showView("signin");
+}
+
+$("googleBtn").addEventListener("click", signIn);
+$("signOutBtn").addEventListener("click", doSignOut);
+$("signOutDenied").addEventListener("click", doSignOut);
+$("switchBtn").addEventListener("click", async () => {
+  await doSignOut();
+  await signIn();
+});
+$("exportBtn").addEventListener("click", exportCsv);
+$("search").addEventListener("input", render);
+$("sourceFilter").addEventListener("change", render);
+
+getRedirectResult(auth).catch(err => showError(friendlyAuthError(err)));
+
+onAuthStateChanged(auth, user => {
+  $("userEmail").textContent = user?.email || "";
+  if (!user) {
+    showView("signin");
+    return;
+  }
+  if (!isAdmin(user)) {
+    $("deniedMsg").textContent = `${user.email} is not an authorised admin. Sign in with one of the two admin accounts.`;
+    showView("denied");
+    return;
+  }
+  showView("dash");
+  subscribe();
+});
+</script>
+</body>
+</html>

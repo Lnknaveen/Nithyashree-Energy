@@ -1,0 +1,48 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAdmin() {
+      return request.auth != null
+        && request.auth.token.email_verified == true
+        && request.auth.token.email is string
+        && (
+          request.auth.token.email.lower() == 'nithyashree.energysolutions@gmail.com' ||
+          request.auth.token.email.lower() == 'naveenkumar.lokesh@gmail.com'
+        );
+    }
+
+    match /leads/{leadId} {
+      allow create: if
+        request.resource.data.keys().hasOnly([
+          'source', 'name', 'phone', 'email', 'city', 'bill', 'systemType',
+          'company', 'billRange', 'model', 'interest', 'message',
+          'propertyType', 'backup', 'recommended', 'subsidy', 'monthlySaving',
+          'page', 'createdAt'
+        ])
+        && request.resource.data.keys().hasAll(['source', 'name', 'phone', 'page', 'createdAt'])
+        && (
+          request.resource.data.source == 'survey' ||
+          request.resource.data.source == 'biz' ||
+          request.resource.data.source == 'dealer' ||
+          request.resource.data.source == 'quote'
+        )
+        && request.resource.data.name is string
+        && request.resource.data.name.size() > 0
+        && request.resource.data.name.size() <= 120
+        && request.resource.data.phone is string
+        && request.resource.data.phone.size() >= 7
+        && request.resource.data.phone.size() <= 20
+        && request.resource.data.page is string
+        && request.resource.data.page.size() <= 100
+        && (!request.resource.data.keys().hasAny(['email']) ||
+          (request.resource.data.email is string && request.resource.data.email.size() <= 200))
+        && (!request.resource.data.keys().hasAny(['message']) ||
+          (request.resource.data.message is string && request.resource.data.message.size() <= 2000))
+        && request.resource.data.createdAt == request.time;
+
+      allow read: if isAdmin();
+      allow update, delete: if false;
+    }
+  }
+}
